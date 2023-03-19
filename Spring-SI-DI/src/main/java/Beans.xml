@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<bean id="carobj" class="com.prudhvi.Car">
+	    <property name="cno" value="9694"></property>
+	    <property name="cname" value="Honda"></property>
+	    <property name="tyre" ref="tyreobj"></property>
+	     <property name="engine" ref="engineobj"></property>
+	</bean>
+	<bean id="tyreobj" class="com.prudhvi.Tyre">
+	    <property name="ctyre" value="MRF"></property>
+	</bean>
+	<bean id="engineobj" class="com.prudhvi.Engine">
+	    <property name="ename" value="TURBO"></property>
+	    <property name="etype" value="V6"></property>
+	</bean>
+</beans>
